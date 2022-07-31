@@ -6,12 +6,12 @@ let flippedVideo;
 
 let label = '';
 
-let fku;
+let pic;
 let hello;
 
 function preload(){
 	classifier = ml5.imageClassifier(imageModeURL + 'model.json');
-	fku = loadImage("ditmeNghia.png");
+	pic = loadImage("pics.png");
 	hello = loadImage("hello.png");
 }
 
@@ -32,9 +32,9 @@ function draw(){
 
 	image(flippedVideo, 0, 0);
 
-	if(label == 'Địt mẹ mày Nghĩa'){
+	if(label == 'Chill picture'){
 
-		image(fku, 0, 0);
+		image(pic, 0, 0);
 	}else if(label == 'Hello'){
 		image(hello, 0, 0);
 	}
